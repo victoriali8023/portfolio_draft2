@@ -1,0 +1,151 @@
+
+body{
+  font-family: "industry", sans-serif;
+  font-size: normal;
+  font-weight: 200;
+  background-color: #ddd;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: "industry", sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+h2{
+  font-size: 16px;
+  line-height: 1;
+}
+nav li{
+  display: inline-block;
+  padding-right: 20px;
+}
+nav a{
+  color: grey;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  color: black;
+  text-decoration: underline;
+}
+img{
+  width = auto;
+  height = auto;
+  max-width: 100%;
+  max-height = 100%;
+}
+:focus{
+  border: 2px solid black;
+  outline: none;
+}
+.container{
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: auto 500px auto;
+  grid-template-rows: 500px auto 500px auto 500px auto auto;
+  width: 100vw;
+}
+.container h2{
+  font-family: "industry", sans-serif;
+  font-size: normal;
+  font-weight: 400;
+  text-align: center;
+}
+.container p{
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+}
+.nav{
+  font-family: "industry", sans-serif;
+  font-size: normal;
+  font-weight: 200;
+  background-color: #ddd;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.purchase-motion{
+  grid-column: 2;
+  grid-row: 1;
+  max-height: 500px;
+  overflow: hidden;
+}
+.purchase{
+  grid-column: 2;
+  grid-row: 2;
+}
+.check-motion{
+  grid-column: 2;
+  grid-row: 3;
+  max-height: 500px;
+  overflow: hidden;
+}
+.check{
+  grid-column: 2;
+  grid-row: 4;
+}
+.freezer-motion{
+  grid-column: 2;
+  grid-row: 5;
+  max-height: 500px;
+  overflow: hidden;
+}
+.freezer{
+  grid-column: 2;
+  grid-row: 6;
+}
+
+footer{
+  color: grey;
+  grid-column: 1 / -1;
+  grid-row: 7;
+  padding-top: 30px;
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+
+  .container{
+    grid-template-rows: 400px 100px 400px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+  }
+  .nav{
+    text-align: right;
+    padding: 35px 0;
+  }
+  .health-manager-image{
+    grid-column: 1;
+    }
+  .health{
+    grid-column: 1;
+  }
+  .que-image{
+    grid-row: 1;
+  }
+  .que{
+    grid-row: 2;
+  }
+  .boutique-hotel-image{
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .boutique{
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .graphic-collection-image{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .graphic{
+    grid-column: 1;
+    grid-row: 4;
+  }
+}  /*End the media query*/

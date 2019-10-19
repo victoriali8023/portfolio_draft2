@@ -1,0 +1,168 @@
+
+body{
+  font-family: "industry", sans-serif;
+  font-weight: 200;
+  background-color: #ddd;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url("../images/header.jpg");      /* Your code here - Link to header.jpg in the images folder */
+  background-position: center;  /* Parallax effect */
+  background-repeat: repeat; /* Parallax effect */
+  background-size: cover;
+  color: white;
+
+}
+h1{
+  font-weight: 600;
+  font-size: 3.125em;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+h2{
+  font-size: 1.2em;
+  line-height: 1;
+}
+nav li{
+  display: inline-block;
+  padding-right: 20px;
+}
+nav a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+:focus{
+  border: 2px solid black;
+  outline: none;
+}
+.container{
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: auto 500px auto;
+  grid-template-rows: 400px auto 400px auto 400px auto 400px auto auto;
+  width: 100vw;
+}
+.container h2{
+  font-weight: 400;
+  text-align: center;
+}
+.container p{
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+.nav{
+  font-family: "industry", sans-serif;
+  font-size: normal;
+  font-weight: 200;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header{
+  height: 400px;
+}
+
+header p{
+  font-size: 1.5em;
+  padding: 0 100px;
+  text-align: center;
+}
+.health-manager-image{
+  grid-column: 2;
+  grid-row: 1;
+  max-height: 700px;
+  overflow: hidden;
+  opacity:0.8;
+}
+.health{
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+}
+.que-image{
+  grid-column: 2;
+  grid-row: 3;
+  max-height: 700px;
+  overflow: hidden;
+  opacity:0.8;
+}
+.que{
+  grid-column: 2;
+  grid-row: 4;
+}
+.boutique-hotel-image{
+  grid-column: 2;
+  grid-row: 5;
+  max-height: 700px;
+  overflow: hidden;
+  opacity:0.9;
+}
+.boutique{
+  grid-column: 2;
+  grid-row: 6;
+}
+.graphic-collection-image{
+  grid-column: 2;
+  grid-row: 7;
+  max-height: 700px;
+  overflow: hidden;
+  opacity:0.8;
+}
+.graphic{
+  grid-column: 2;
+  grid-row: 8;
+}
+footer{
+  grid-column: 1 / -1;
+  grid-row: 9;
+  padding-top: 30px;
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+
+  .container{
+    grid-template-rows: 400px 100px 400px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+  }
+  .nav{
+    text-align: right;
+    padding: 35px 0;
+  }
+  .health-manager-image{
+    grid-column: 1;
+    }
+  .health{
+    grid-column: 1;
+  }
+  .que-image{
+    grid-row: 1;
+  }
+  .que{
+    grid-row: 2;
+  }
+  .boutique-hotel-image{
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .boutique{
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .graphic-collection-image{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .graphic{
+    grid-column: 1;
+    grid-row: 4;
+  }
+}  /*End the media query*/
